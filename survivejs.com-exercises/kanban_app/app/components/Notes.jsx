@@ -11,7 +11,9 @@ export default class Notes extends React.Component {
         const notes = this.props.items;
 
         return (
-            <ul className='notes'>{this.props.items.map(this.renderNote)}</ul>
+            <ul className='notes'>
+                {this.props.items.map(this.renderNote)}
+            </ul>
         );
     }
 
